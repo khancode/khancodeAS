@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="tab_stream">Stream</string>
+    <string name="tab_messages">Messages</string>
+    <string name="tab_notifications">Notifications</string>
+    <string name="tab_photos">Photos</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- fragment_login.xml -->
+    <string name="username_login">Username:</string>
+    <string name="password_login">Password:</string>
+    <string name="login_button_login">Login</string>
+
+    <!-- fragment_create.xml -->
+    <string name="first_name_create">First Name:</string>
+    <string name="last_name_create">Last Name:</string>
+    <string name="email_create">Email:</string>
+    <string name="username_create">Username:</string>
+    <string name="password_create">Password:</string>
+    <string name="confirm_password_create">Confirm Password:</string>
+    <string name="create_button_create">Create</string>
+
+
+</resources>
