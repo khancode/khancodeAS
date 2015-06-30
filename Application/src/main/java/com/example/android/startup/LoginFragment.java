@@ -2,6 +2,7 @@ package com.example.android.startup;
 
 import android.app.Activity;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -12,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.android.common.logger.Log;
+import com.example.android.home.HomeActivity;
 import com.example.android.restapi.VerifyLogin;
 import com.example.android.slidingtabscolors.R;
 
@@ -126,8 +128,11 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
 
     public void receiveVerifyLoginResult(boolean authentic) {
 
-        if (authentic)
+        if (authentic) {
             Log.d("receiveVerifyLoginResult", "login verified successfully! :D");
+            Intent intent = new Intent(getActivity(), HomeActivity.class);
+            startActivity(intent);
+        }
         else
             Log.d("receiveVerifyLoginResult", "incorrect username or password :(");
     }

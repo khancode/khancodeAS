@@ -69,6 +69,14 @@ public class CreateFragment extends Fragment implements View.OnClickListener {
         Log.d(TAG, "password: " + password);
         Log.d(TAG, "confirmPassword: " + confirmPassword);
 
+        if (firstName.length() == 0 || lastName.length() == 0 ||
+                email.length() == 0 || username.length() == 0 ||
+                password.length() == 0 || confirmPassword.length() == 0)
+        {
+            Log.d(TAG, "Display error message");
+            return;
+        }
+
         CreateUser asyncTask = new CreateUser(this);
         asyncTask.execute(firstName, lastName, email, username, password);
     }

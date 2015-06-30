@@ -22,6 +22,10 @@
     <string name="password_create">Password:</string>
     <string name="confirm_password_create">Confirm Password:</string>
     <string name="create_button_create">Create</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 
 
 </resources>
